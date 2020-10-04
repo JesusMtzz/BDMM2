@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Menu</title> 
+    <title>Register</title> 
     <!-- bootstrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     
@@ -13,69 +13,75 @@
 <body>
     
 <!-- navbar -->
-<div class="alert alert-danger fixed-top" role="alert">
-  <br><br><br>
-  No hay una sesion iniciada!
-</div>
-
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-
-<input type="image" src="https://image.flaticon.com/icons/png/512/21/21601.png" alt="10" class="rounded"style="width:100px;height:60px;" onclick="window.location.href = 'articuloinfo.html';" >
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-      
-        <li class="nav-item">
-          <a class="nav-link" href="#" onclick="window.location.href = 'login.html';" style="color:red">Login</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Categorias
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Deportes</a>
-            <a class="dropdown-item" href="#">Cine</a>
-            <a class="dropdown-item" href="#">Entretenimiento</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Videojuegos (Playstation,Xbox)</a>
-          </div>
-
-         
-        </li>
-        <li>
-            <div>
-                <a class="nav-link" href="#" onclick="window.location.href = 'noticia.html';">Noticia Random</a>
-              </div>
-        </li>
-      </ul>
-
-      
-    <!-- <button type="button" class="btn btn-info">Carrito</button> -->
- 
-      <form class="form-inline my-2 my-lg-0">
-          
-        <input class="form-control mr-sm-2" type="Buscar" placeholder="Buscar" aria-label="Search">
-        <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Buscar</button>
-        
-        
-      </form>
-      
-    </div>
-    
-    
-  </nav>
- 
+    <input type="image" src="https://image.flaticon.com/icons/png/512/21/21601.png" alt="10" class="rounded"style="width:100px;height:60px;" onclick="window.location.href = 'menu.html';" >  
+</nav>
 
 <!-- fin navbar -->
 
+<br> <br> <br> <br>
+<form class="mx-auto" style="width: 310px;">
+
+
+    <div class="form-group">
+        <label for="InputNombre">Nombre(s)</label>
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="InputNombre" required>
+        
+      </div>
+
+    <div class="form-group">
+        <label for="InputApellidoP">Apellido Paterno</label>
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="InputApellidoP" required>
+      </div>
+
+      <div class="form-group">
+        <label for="InputApellidoM">Apellido Materno</label>
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="InputApellidoM" required> 
+      </div>
+
+      <div class="form-group">
+        <label for="InputUsername">Nombre de Usuario</label>
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="InputUsernam" placeholder="Minimo 8 caracteres" required>
+      </div>
+
+    <div class="form-group">
+      <label for="InputEmail">Correo Electronico</label>
+      <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" required>
+    </div>
+
+    <div class="form-group">
+      <label for="InputPassword">Contrasena</label>
+      <input type="text" class="form-control" id="InputPassword" required>
+    </div>
+
+    <div class="form-group">
+      <label for="InputTelefono">Telefono</label>
+      <input type="number" class="form-control" id="InputTelefono">
+    </div>
+
+    <div class="form-group">
+      <label for="InputDireccion1">Direccion</label>
+      <input type="text" class="form-control" id="InputDireccion1">
+    </div>
+
+  
+        <div class="form-group">
+          <label for="InputImagenPerfil">Imagen de Perfil</label>
+          <input type="file" class="form-control-file" id="InputImagenPerfil" required>
+        </div>
+     
+
+    <div allign="right"> 
+        <button type="submit" class="btn btn-primary"  >Crear Cuenta</button> 
+    </div>
+   <br>
+   <br><br><br>
+
+  </form>
 
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<!-- footer -->
+
 <!-- Footer -->
 <footer class="page-footer font-small blue pt-4 bg-secondary">
 
@@ -158,7 +164,13 @@
 
 </footer>
 <!-- Footer -->
-<!-- fin footer -->
+
+
+
+
+
+
+
 
 
 
